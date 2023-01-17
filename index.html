@@ -11,20 +11,34 @@
   </head>
   <body> 
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weatherapp">
 
-   
+   <div class="overview">
   
     <h1> New York</h1>
     <ul>
       <li>
         Friday 05:00
       </li>
+      <li>
+        Clear
+      </li>
     </ul>
+  </div>
     <div class="row">
       <div class="class col-6">
-        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="weather-icon">
-     12°C / °F
+        <div class="d-flex weather-temperature">
+        <img 
+        src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+        alt="weather-icon" 
+        id = "icon"
+        />
+    <strong> 12</strong>
+    <small class="units">
+    °C / <a href="#"> °F</a>
+  </small>
+    </div>
       </div>
       <div class="class col-6">
         <ul>
@@ -39,11 +53,12 @@
           </li>
         </ul>
       </div>
-    </div>  <small>
+    </div>  
+       </div>
+  <small>
     <a href="https:https://github.com/annats04/version2_weather-app" target="_blank"> Open-Source code</a> by Anna Tsantekidou
     </small>
-       </div>
-  
+    </div>
 </div>
 <script src="src/app.js"></script>
 </script>
