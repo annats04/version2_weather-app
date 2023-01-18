@@ -21,6 +21,7 @@ li {
   font-size: 16;
   font-weight: 100;
   line-height: 19px;
+  text-transform: capitalize;
 }
 
 .weatherapp {
