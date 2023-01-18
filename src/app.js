@@ -34,6 +34,14 @@ function displayTemperature(response) {
 
   let dateElement = document.querySelector("#date");
 
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
+  iconElement.setAttribute("alt", response.data.condition.description);
+
   dateElement.innerHTML = formatDate(response.data.time * 1000);
 
   windElement.innerHTML = Math.round(response.data.wind.speed);
@@ -44,8 +52,8 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
 }
-
+let city = "Tokyo";
 let apiKey = "a5fa44f8460fdadf371tbdae4e7839fo";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Lisbon&key=${apiKey}&units=metric`;
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
