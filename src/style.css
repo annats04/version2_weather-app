@@ -75,3 +75,18 @@ a {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.weather-forecast {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+.forecast-temp-min {
+  opacity: 0.6;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+}
