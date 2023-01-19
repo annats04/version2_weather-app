@@ -56,8 +56,22 @@ li:first-letter {
   font-weight: 400;
   line-height: 1;
 }
+a {
+  text-decoration: none;
+}
 
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
