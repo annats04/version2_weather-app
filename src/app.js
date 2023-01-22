@@ -23,7 +23,8 @@ function formatDate(timestamp) {
   return `${day} ${hours}: ${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class = "row">`;
   let days = ["Thu", "Fri", "Sat"];
@@ -52,6 +53,15 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "a5fa44f8460fdadf371tbdae4e7839fo";
+
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metrics`;
+  console.log(apiURL);
+  axios.get(apiURL).then(displayForecast);
+}
+
 function displayTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   let cityElement = document.querySelector("#city");
@@ -76,6 +86,8 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
+
+  getForecast(response.data.coordinates);
 }
 
 function search(city) {
@@ -120,5 +132,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
-search("Los Angeles");
-displayForecast();
+search("Sydney");
