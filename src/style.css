@@ -105,4 +105,23 @@ a {
 .weather-condition {
   border: #212529 1px solid;
   border-radius: 15px;
+  opacity: 0.9;
+}
+
+.time-update,
+.weather-description {
+  font-family: "Roboto Mono", monospace;
+  color: #212529;
+  font-weight: 400;
+}
+.time-update {
+  margin-bottom: 10px;
+}
+
+footer {
+  color: #362d3b;
+  opacity: 0.8;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-align: center;
 }
