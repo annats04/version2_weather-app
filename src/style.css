@@ -23,6 +23,14 @@ li {
   line-height: 19px;
 }
 
+.city-name {
+  font-weight: 400px;
+  font-family: "Quicksand";
+  letter-spacing: 2px;
+  font-size: 28px;
+  color: #212529;
+  margin-bottom: 10px;
+}
 li:first-letter {
   text-transform: capitalize;
 }
@@ -30,10 +38,11 @@ li:first-letter {
 .weatherapp {
   max-width: 600px;
   margin: 40px auto;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 30px;
   border: 1px solid #dadde1;
   border-radius: 10px;
-  background: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+  background: linear-gradient(-225deg, #fffeff 0%, #ace0f9 100%);
 }
 
 .weather-app-wrapper {
@@ -59,26 +68,28 @@ li:first-letter {
 }
 a {
   text-decoration: none;
+  color: #212529;
 }
 
-.weather-temperature .units {
+.units {
   position: relative;
   font-size: 16px;
+  color: #212529;
 }
 
-.weather-temperature .active {
+.active {
   color: rgb(33, 33, 33);
   cursor: default;
   text-decoration: none;
   font-weight: bolder;
 }
-
-.weather-temperature .active:hover {
+.active:hover {
   text-decoration: none;
+  color: #212529;
 }
 
 .weather-forecast {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 .weather-forecast-date {
@@ -89,4 +100,9 @@ a {
 }
 .weather-forecast-temperature {
   font-size: 13px;
+}
+
+.weather-condition {
+  border: #212529 1px solid;
+  border-radius: 15px;
 }
