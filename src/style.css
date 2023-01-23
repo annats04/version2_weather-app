@@ -70,10 +70,12 @@ a {
   text-decoration: none;
   color: #212529;
 }
-
+.temperatureNow {
+  font-size: 19px;
+}
 .units {
   position: relative;
-  font-size: 16px;
+  font-size: 19px;
   color: #212529;
 }
 
@@ -90,22 +92,26 @@ a {
 
 .weather-forecast {
   margin-top: 45px;
+  text-align: center;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 17px;
+  font-family: "Quicksand";
 }
 .forecast-temp-min {
   opacity: 0.6;
 }
 .weather-forecast-temperature {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .weather-condition {
   border: #212529 1px solid;
   border-radius: 15px;
   opacity: 0.9;
+  padding: 3px;
+  text-align: center;
 }
 
 .time-update,
@@ -124,4 +130,5 @@ footer {
   font-size: 12px;
   letter-spacing: 3px;
   text-align: center;
+  font-family: "Roboto Mono", monospace;
 }
