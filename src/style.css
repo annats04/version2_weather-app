@@ -96,14 +96,14 @@ a {
 }
 
 .weather-forecast-date {
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Quicksand";
 }
 .forecast-temp-min {
   opacity: 0.6;
 }
 .weather-forecast-temperature {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .weather-condition {
@@ -126,9 +126,17 @@ a {
 
 footer {
   color: #362d3b;
-  opacity: 0.8;
+  opacity: 0.9;
   font-size: 12px;
   letter-spacing: 3px;
   text-align: center;
   font-family: "Roboto Mono", monospace;
+}
+
+.gitLink {
+  font-weight: bolder;
+}
+
+.gitLink:hover {
+  text-decoration: underline;
 }
